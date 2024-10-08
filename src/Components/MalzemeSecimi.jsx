@@ -24,6 +24,7 @@ function MalzemeSecimi() {
   return (
     <div>
       <h3>Ek Malzemeler</h3>
+      <p>En Fazla 10 malzeme seçebilirsiniz. 5₺</p>
       <form>
         {ekMalzemeler.map((malzeme)=>{
           return <label><input type="checkbox" value={malzeme}/>{malzeme}</label>})}

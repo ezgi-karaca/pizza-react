@@ -3,6 +3,9 @@ import BoyutSecimi from "./BoyutSecimi";
 import HamurSecimi from "./HamurSecimi";
 import Pizza from "./Pizza";
 import MalzemeSecimi from "./MalzemeSecimi";
+import SiparisNotu from "./SiparisNotu";
+import Counter from "./Counter";
+import SiparisToplami from "./SiparisToplami";
 
 
 function FormSayfasi() {
@@ -18,6 +21,16 @@ function FormSayfasi() {
         </div>
 
         <MalzemeSecimi/>
+
+        <SiparisNotu/>
+
+        <hr/>
+
+        <div>
+        <Counter/>
+        <SiparisToplami/>
+        </div>
+        
       
       </div>
     </div>
