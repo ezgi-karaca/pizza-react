@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
-import Home from './Home.jsx'
-import FormSayfasi from './Components/Form'
+import React from 'react'
+import FormSayfasi from './Components/FormSayfasi.jsx';
 
 function App() {
   return (
