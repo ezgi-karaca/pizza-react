@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.home-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../Assets/Iteration-1-assets/home-banner.png');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+.slogan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+
+}
+.baslik{
+  color: white;
+  font-family: "Londrina Solid";
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+.slogan{
+  font-family: "Roboto Condensed";
+  color: white;
+  font-weight: 300;
+  font-size: 5rem;
+  width: 60%;
+  text-align: center;
+}
+.aciktim-button {
+  font-family: "Barlow";
+  background-color: #FDC913;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: none;
+  width: 14rem;
+  height: 4rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
