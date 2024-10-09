@@ -17,7 +17,14 @@ const  ekMalzemeler = [
 ];
 
 
-function MalzemeSecimi() {
+function MalzemeSecimi({ onToppingsChange, selectedToppings }) {
+  
+  const handleChange = (e) => {
+    const topping = e.target.value;
+    const isChecked = e.target.checked;
+
+    onToppingsChange(topping, isChecked);
+  };
  
  
 
@@ -27,7 +34,7 @@ function MalzemeSecimi() {
       <p>En Fazla 10 malzeme seçebilirsiniz. 5₺</p>
       <form>
         {ekMalzemeler.map((malzeme)=>{
-          return <label><input type="checkbox" value={malzeme}/>{malzeme}</label>})}
+          return <label><input type="checkbox" value={malzeme} checked={selectedToppings.includes(malzeme)} onChange={handleChange}/>{malzeme}</label>})}
       </form> 
     </div>
   )

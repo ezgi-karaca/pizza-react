@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import BoyutSecimi from "./BoyutSecimi";
 import HamurSecimi from "./HamurSecimi";
 import Pizza from "./Pizza";
@@ -9,6 +9,22 @@ import SiparisToplami from "./SiparisToplami";
 
 
 function FormSayfasi() {
+  const pizzaFiyati = 85.50;
+  const [selectedToppings, setSelectedToppings] = useState([]);
+
+  const handleToppings = (topping, isChecked) => {
+    if (isChecked) {
+      // Eğer kullanıcı yeni bir malzeme eklemeye çalışıyorsa
+      if (selectedToppings.length < 10) {
+        setSelectedToppings(prev => [...prev, topping]);
+      } else {
+        alert("En fazla 10 malzeme seçebilirsiniz.");
+      }
+    } else {
+      // Malzeme kaldırılırsa
+      setSelectedToppings(prev => prev.filter(t => t !== topping));
+    }
+  };
   
   return (
     <div>
@@ -20,7 +36,7 @@ function FormSayfasi() {
           <HamurSecimi/>
         </div>
 
-        <MalzemeSecimi/>
+        <MalzemeSecimi onToppingsChange={handleToppings} selectedToppings={selectedToppings}  />
 
         <SiparisNotu/>
 
@@ -28,7 +44,7 @@ function FormSayfasi() {
 
         <div>
         <Counter/>
-        <SiparisToplami/>
+        <SiparisToplami selectedToppings={selectedToppings} pizzaFiyati={pizzaFiyati} />
         </div>
         
       

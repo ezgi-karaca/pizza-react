@@ -1,14 +1,7 @@
 import React, {useState} from 'react';
-import MalzemeSecimi from './MalzemeSecimi';
 
-function SiparisToplami() {
-  const pizzaFiyati = 85.50;
-  const [selectedToppings, setSelectedToppings] = useState([])
-
-  const handleToppings = (e) => {
-    const topping = e.target.value;
-    setSelectedToppings(prev => prev.includes(topping) ? prev.filter(t => t !== topping) : [...prev, topping])
-  }
+function SiparisToplami({ selectedToppings, pizzaFiyati }) {
+ 
 
   const toppingFiyatiHesapla = () => {
     return selectedToppings.length*5;
