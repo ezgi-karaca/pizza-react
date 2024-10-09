@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+.toplam {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: 1rem;
+  border: 1px solid lightgray;
+  padding: 2rem 4rem;
+  width: 23rem;
+}
+h3{
+  font-family: 'Barlow';
+  font-size: 1.5rem;
+}
+.topping-fiyat {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Barlow';
+  font-size: 1.5rem;
+}
+.toplam-fiyat {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Barlow';
+  font-size: 1.5rem;
+}
+button {
+  background-color: #FDC913;
+  border: none;
+  border-radius: 10px;
+  height: 3rem;
+}
+button:hover {
+  cursor: pointer;
+}

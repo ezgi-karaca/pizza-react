@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.malzeme-container{
+  font-family: 'Barlow';
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 3rem;
+
+}
+.malzeme-container h3 {
+  font-family: 'Barlow';
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.malzeme-container p {
+  font-family: 'Barlow';
+  font-size: 1.2rem;
+  color: #5F5F5F;
+}
+.checkbox {
+  box-sizing: border-box;
+  font-family: 'Barlow';
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1.5rem;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+.checkbox label {
+  flex: 0 0 calc(33.33% - 10px); 
+  box-sizing: border-box; 
+}

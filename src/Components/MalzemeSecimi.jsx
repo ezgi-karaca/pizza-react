@@ -1,4 +1,5 @@
 import React from "react";
+import '../csssheets/MalzemeSecimi.css'
 
 const  ekMalzemeler = [
   "Pepperoni",
@@ -29,12 +30,12 @@ function MalzemeSecimi({ onToppingsChange, selectedToppings }) {
  
 
   return (
-    <div>
+    <div className="malzeme-container">
       <h3>Ek Malzemeler</h3>
       <p>En Fazla 10 malzeme seçebilirsiniz. 5₺</p>
-      <form>
+      <form className="checkbox">
         {ekMalzemeler.map((malzeme)=>{
-          return <label><input type="checkbox" value={malzeme} checked={selectedToppings.includes(malzeme)} onChange={handleChange}/>{malzeme}</label>})}
+          return <label><input type="checkbox" value={malzeme} checked={selectedToppings.includes(malzeme)} onChange={handleChange}/> {malzeme}</label>})}
       </form> 
     </div>
   )

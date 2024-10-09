@@ -49,3 +49,12 @@ body {
 .form {
   width: 25%;
 }
+
+hr {
+  margin-bottom: 3rem;
+}
+
+.siparis-toplami {
+  display: flex;
+  padding-bottom: 5rem;
+}

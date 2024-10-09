@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import '../csssheets/Counter.css'
+
 
 function Counter() {
   const [count,setCount] = useState(1);
@@ -14,9 +16,13 @@ function Counter() {
 
   return (
     <div>
-      <button onClick={eksi}>-</button>
-      <h3>{count}</h3>
-      <button onClick={arti}>+</button>
+      <div className="counter-container">
+        <button className="button" onClick={eksi}>-</button>
+        <h3  className="count" >{count}</h3>
+        <button className="button" onClick={arti}>+</button>
+      </div>
+
+    
     </div>
   )
 }

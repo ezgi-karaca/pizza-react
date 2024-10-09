@@ -9,6 +9,8 @@ import '../csssheets/FormSayfasi.css'
 
 
 function FormSayfasi() {
+ 
+
   const pizzaFiyati = 85.50;
   const [selectedToppings, setSelectedToppings] = useState([]);
 
@@ -50,7 +52,7 @@ function FormSayfasi() {
 
           <hr/>
 
-          <div>
+          <div className="siparis-toplami">
           <Counter/>
           <SiparisToplami selectedToppings={selectedToppings} pizzaFiyati={pizzaFiyati} />
           </div>
