@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.boyut-secimi{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 13rem;
+}
+.boyut-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.boyut-form h3 {
+  font-family: 'Barlow';
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+.boyut-form label {
+  font-family: 'Barlow';
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #5F5F5F;
+}
+.hamur-form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.hamur-form h3 {
+  font-family: 'Barlow';
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+.star {
+  color: #D80027;
+}

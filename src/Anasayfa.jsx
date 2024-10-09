@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import './Home.css';
+import './csssheets/Anasayfa.css'
 
 function Anasayfa() {
   const history = useHistory();
