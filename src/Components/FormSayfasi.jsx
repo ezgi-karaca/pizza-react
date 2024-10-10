@@ -33,7 +33,7 @@ function FormSayfasi() {
       <div className="header">
         <div className="header-text">
           <h1 className='baslik'>Teknolojik Yemekler</h1>
-          <p className="text">Anasayfa - <span className="span">Sipariş Oluştur</span></p>
+
         </div>
         
       </div>

@@ -11,35 +11,46 @@ body {
   padding: 0;
   width: 100%;
 }
-.home-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url('../Assets/Iteration-1-assets/home-banner.png');
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-}
-.slogan-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 5rem;
 
+.intro {
+  background-image: url("../assets/Iteration-1-assets/home-banner.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  gap: 3rem;
 }
+
+
 .baslik{
   color: white;
   font-family: "Londrina Solid";
   margin-bottom: 30px;
   font-size: 2.5rem;
 }
-.slogan{
+.slogan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.firsat-metni {
+  font-family: "Satisfy";
+  color: #FDC913;
+  font-size: 2rem;
+}
+.slogan {
   font-family: "Roboto Condensed";
   color: white;
   font-weight: 300;
   font-size: 5rem;
   width: 60%;
   text-align: center;
+  margin-bottom: 3rem;
 }
 .aciktim-button {
   font-family: "Barlow";
@@ -53,3 +64,492 @@ body {
   margin-top: 2rem;
   cursor: pointer;
 }
+
+.main-section {
+  width: 100%;
+  height: 5rem;
+  display: block;
+}
+
+.main-nav {
+  min-height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 4.3rem;
+}
+.main-nav a {
+  min-height: 100%;
+  text-decoration: none;
+  font-size: 1,8rem;
+  font-family: "Barlow";
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.main-nav a img {
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+.main-section-cart-container {
+  display: block;
+  width: 100%;
+  background: #FAF7F2;
+  overflow: auto;
+}
+
+.triple-cart-section {
+  display: flex;
+  justify-content: center;
+}
+
+.cart-container {
+  display: flex;
+  width: 70rem;
+  min-height: 30rem;
+  margin-top: 4rem;
+}
+.first-cart {
+  background-image: url("");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  gap: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 1rem;
+  flex: 1;
+}
+.first-cart h2 {
+  color: white;
+  font-family: "Quattrocento";
+  font-weight: 700;
+  font-size: 3rem;
+  width: 3rem;
+}
+.first-cart p {
+  color: white;
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 1rem;
+  
+}
+.first-cart button, .second-cart button, .third-cart button {
+  border: none;
+  background-color: white;
+  color: #CE2829;
+  width: 7.5rem;
+  height: 2.5rem;
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 0.7rem;
+  border-radius: 1.25rem ;
+  margin-left: -0.5rem;
+  cursor: pointer;
+}
+
+.second-row {
+  width: 25rem ;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.second-cart {
+  background-image: url("public/assets/iteration-2/cta/kart-2.png");
+  background-size: cover;
+  flex: 1;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.second-cart h2 {
+  color: white;
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 2rem;
+  width: 12rem;
+}
+
+.third-cart {
+  background-image: url("public/assets/iteration-2/cta/kart-3.png");
+  background-size: cover;
+  flex: 1;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+.third-cart h2 {
+  color: black;
+  width: 15rem;
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.red-word {
+  color: #CE2829;
+}
+
+.ara-metin-container {
+  background: #FAF7F2;
+  display: block;
+  min-height: 8rem;
+  margin-top: 2rem;
+}
+.ara-metin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.ara-metin a {
+  text-decoration: none;
+  color: #CE2829;
+  font-family: "Satisfy";
+  font-size: 2rem;
+  font-weight: 400;
+}
+.ara-metin h2 {
+  color: #292929;
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.yiyecekler-section {
+  display: block;
+  width: 100%;
+}
+.yiyecekler-container {
+  display: flex;
+  min-height: 6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.yiyecekler-container nav {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.yiyecekler-container nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 4rem;
+  width: 11rem;
+  text-decoration: none;
+  font-size: 1,8rem;
+  font-family: "Barlow";
+  font-weight: 500;
+  display: flex;
+  background-color: white;
+  color: black;
+  padding-right: 1rem;
+  border-radius: 2rem;
+
+}
+.yiyecekler-container nav a img {
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+.menu-section {
+  display: block;
+  width: 100%;
+}
+.menu-container {
+  width: 100%;
+  min-height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.terminal-pizza, .aci-pizza, .tavuklu-burger {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  min-height: 35rem;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.menu-container h3 {
+  margin-top: 1.2rem;
+  font-family: "Barlow";
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.menu-paragraflari {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-top: 1rem;
+  font-family: "Barlow";
+  font-size: 1rem;
+  font-weight: 600;
+}
+.yemek-puani {
+  flex: 4;
+}
+.yorumlar {
+  flex: 1;
+}
+.fiyat {
+  flex: 1;
+}
+footer {
+  background-color: #1A1A1A;
+  padding: 1rem 0;
+}
+.footer-top {
+  min-height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  color: white;
+}
+.first-order {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.first-order h3 {
+  font-family: "Londrina Solid";
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  width: 12rem;
+  gap: 1rem;
+}
+.contact li {
+  font-family: "Barlow";
+  font-size: 1rem;
+  font-weight: 400;
+}
+.contact li img {
+  height: 2rem;
+}
+
+.second-order {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  gap: 2rem;
+  padding-top: 4rem;
+}
+.second-order h4 {
+  font-family: "Barlow";
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.second-order ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: "Barlow";
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 20rem;
+  min-height: 20rem;
+  margin-top: 5rem;
+}
+.footer-right h4 {
+  font-family: "Barlow";
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+}
+.instagram {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 10px; 
+  list-style: none; 
+  padding: 0;
+  margin: 0; 
+}
+.instagram img {
+  width: 7rem;
+  min-height: 7rem;
+}
+
+.bottom-content {
+  background-color: #1A1A1A;
+  color: white;
+  display: flex;
+  width: 100%;
+  gap: 10rem;
+  min-height: 6rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.bottom-content img {
+  height: 1rem;
+}
+.bottom-content p {
+  font-family: "Barlow";
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    max-width: 100%;
+
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100vh;
+    padding-top: 5rem;
+  }
+  .baslik {
+    font-size: 3rem;
+  }
+ 
+ 
+  .main-nav {
+    height: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 0;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+    padding-right: 5rem;
+  }
+  .main-nav a {
+    font-size: 1rem;
+    color: black;
+  }
+  .main-section-cart-container{
+    width: 100%;
+  }
+  .triple-cart-section {
+    width: 100%;
+  }
+ .cart-container {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -5rem;
+  gap: 1rem;
+  padding-left: 3rem;
+ }
+ .first-cart {
+  width: 25rem;
+ }
+ .second-row {
+  gap: 1rem;
+ }
+ .ara-metin-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+  width: 30rem;
+  padding-left: 5rem;
+  
+ }
+ .ara-metin {
+  width: 20rem;
+  height: 20rem;
+  justify-content: center;
+ }
+ .ara-metin h2 {
+  font-weight: 2rem;
+  width: 18rem;
+  text-align: center;
+ }
+ .yiyecekler-container nav {
+  height: 20rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 0;
+  padding-top: 2rem;
+  padding-left: 5rem;
+  padding-bottom: 2rem;
+  padding-right: 5rem;
+ }
+
+ .menu-container {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+ }
+
+ footer {
+  display: flex;
+  flex-direction: column;
+ }
+ .footer-top {
+  display: inline-block;
+  align-self: center;
+ }
+ 
+ .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+ }
+
+
+
+}
+
+
+
+
+
+

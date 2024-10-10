@@ -4,6 +4,7 @@ import '../csssheets/BoyutSecimi.css'
 function BoyutSecimi(){
   return (
     <div className="boyut-secimi">
+      <div className="boyut-container">
       <form className="boyut-form">
         <h3>Boyut Seç <span className="star">*</span></h3>
         <label htmlFor='kucuk'><input type="radio" id="kucuk" name="boyut"/> Küçük</label> 
@@ -19,6 +20,7 @@ function BoyutSecimi(){
         <option value="kalin">Kalın</option>
       </select>
       </form>
+      </div>
     </div>
   )
 }
