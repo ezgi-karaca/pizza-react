@@ -10,7 +10,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-left: 1rem;
+  margin-left: 5rem;
   border: 1px solid lightgray;
   padding: 2rem 4rem;
   width: 23rem;

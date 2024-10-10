@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Anasayfa from './Anasayfa';
 import FormSayfasi from './Components/FormSayfasi.jsx';
 import SiparisOzeti from './Components/SiparisOzeti.jsx';
+import './csssheets/App.css'
 
 function App() {
   return (

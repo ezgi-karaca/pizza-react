@@ -13,11 +13,12 @@ body {
 }
 .pizza {
   font-family: 'Barlow';
-  height: 29rem;
+  width: 100%;
   padding-top: 3rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-bottom: 3rem;
 }
 .pizza h3 {
   font-family: 'Barlow';
