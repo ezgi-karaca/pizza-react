@@ -28,12 +28,12 @@ function Anasayfa() {
 
         <section class="main-section-nav">
         <nav class="main-nav">
-          <a href=""><img src="./Assets/Iteration-2-assets/icons/1.svg"/>YENİ! Kore</a>
-          <a href=""><img src="./Assets/Iteration-2-assets/icons/2.svg"/>Pizza</a>
-          <a href=""><img src="./Assets/Iteration-2-assets/icons/3.svg"/>Burger</a>
-          <a href=""><img src="./Assets/Iteration-2-assets/icons/4.svg"/>Kızartmalar</a>
-          <a href=""><img src="./Assets/Iteration-2-assets/icons/5.svg"/>Fast food</a>
-          <a href=""><img src="./Assets/Iteration-2-assets/icons/6.svg"/>Gazlı İçecek</a>
+          <a href=""><img src="./Assets/Iteration-2-aseets/icons/1.svg"/>YENİ! Kore</a>
+          <a href=""><img src="./Assets/Iteration-2-aseets/icons/2.svg"/>Pizza</a>
+          <a href=""><img src="./Assets/Iteration-2-aseets/icons/3.svg"/>Burger</a>
+          <a href=""><img src="./Assets/Iteration-2-aseets/icons/4.svg"/>Kızartmalar</a>
+          <a href=""><img src="./Assets/Iteration-2-aseets/icons/5.svg"/>Fast food</a>
+          <a href=""><img src="./Assets/Iteration-2-aseets/icons/6.svg"/>Gazlı İçecek</a>
         </nav>
     </section>
 
@@ -72,12 +72,12 @@ function Anasayfa() {
       <section class="yiyecekler-section">
         <div class="yiyecekler-container">
           <nav>
-            <a href=""><img src="public/assets/iteration-2/icons/1.svg"/>Ramen</a>
-            <a class="selected-page" href=""><img src="public/assets/iteration-2/icons/2.svg"/>Pizza</a>
-            <a href=""><img src="public/assets/iteration-2/icons/3.svg"/>Burger</a>
-            <a href=""><img src="public/assets/iteration-2/icons/4.svg"/>French fries</a>
-            <a href=""><img src="public/assets/iteration-2/icons/5.svg"/>Fast food</a>
-            <a href=""><img src="public/assets/iteration-2/icons/6.svg"/>Soft drinks</a>
+            <a href=""><img src="./Assets/Iteration-2-aseets/icons/1.svg"/>Ramen</a>
+            <a class="selected-page" href=""><img src="./Assets/Iteration-2-aseets/icons/2.svg"/>Pizza</a>
+            <a href=""><img src="./Assets/Iteration-2-aseets/icons/3.svg"/>Burger</a>
+            <a href=""><img src="./Assets/Iteration-2-aseets/icons/4.svg"/>French fries</a>
+            <a href=""><img src="./Assets/Iteration-2-aseets/icons/5.svg"/>Fast food</a>
+            <a href=""><img src="./Assets/Iteration-2-aseets/icons/6.svg"/>Soft drinks</a>
           </nav>
 
         </div>
@@ -88,7 +88,7 @@ function Anasayfa() {
         <div class="menu-container">
 
           <div class="terminal-pizza">
-            <img src="public/assets/iteration-2/pictures/food-1.png"/>
+            <img src="./Assets/Iteration-2-aseets/pictures/food-1.png"/>
             <h3>Terminal Pizza</h3>
             <div class="menu-paragraflari">
               <p class="yemek-puani">4.9</p>
@@ -98,7 +98,7 @@ function Anasayfa() {
           </div>  
 
           <div class="aci-pizza">
-            <img src="public/assets/iteration-2/pictures/food-2.png"/>
+            <img src="./Assets/Iteration-2-aseets/pictures/food-2.png"/>
             <h3>Acı Pizza</h3>
             <div class="menu-paragraflari">
               <p class="yemek-puani">4.9</p>
@@ -108,7 +108,7 @@ function Anasayfa() {
           </div>
 
           <div class="tavuklu-burger">
-            <img src="public/assets/iteration-2/pictures/food-3.png"/>
+            <img src="./Assets/Iteration-2-aseets/pictures/food-3.png"/>
             <h3>Tavuklu Burger</h3>
             <div class="menu-paragraflari">
               <p class="yemek-puani">4.9</p>
@@ -128,9 +128,9 @@ function Anasayfa() {
           <div class="first-order">
             <h3>Teknolojik Yemekler</h3>
             <ul class="contact">
-              <li><img src="public/assets/iteration-2/footer/icons/icon-1.png"/>341 Londonderry Road, Istanbul Türkiye</li>
-              <li><img src="public/assets/iteration-2/footer/icons/icon-2.png"/>aciktim@teknolojikyemekler.com</li>
-              <li><img src="public/assets/iteration-2/footer/icons/icon-3.png"/>+90 216 123 45 67</li>
+              <li><img src="./Assets/Iteration-2-aseets/footer/icons/icon-1.png"/>341 Londonderry Road, Istanbul Türkiye</li>
+              <li><img src="./Assets/Iteration-2-aseets/footer/icons/icon-2.png"/>aciktim@teknolojikyemekler.com</li>
+              <li><img src="./Assets/Iteration-2-aseets/footer/icons/icon-3.png"/>+90 216 123 45 67</li>
             </ul>
           </div>
           <div class="second-order">
@@ -148,12 +148,12 @@ function Anasayfa() {
         <div class="footer-right">
           <h4>Instagram</h4>
           <ul class="instagram">
-            <li><img src="public/assets/iteration-2/footer/insta/li-0.png"/></li>
-            <li><img src="public/assets/iteration-2/footer/insta/li-1.png"/></li>
-            <li><img src="public/assets/iteration-2/footer/insta/li-2.png"/></li>
-            <li><img src="public/assets/iteration-2/footer/insta/li-3.png"/></li>
-            <li><img src="public/assets/iteration-2/footer/insta/li-4.png"/></li>
-            <li><img src="public/assets/iteration-2/footer/insta/li-5.png"/></li>
+            <li><img src="./Assets/Iteration-2-aseets/footer/insta/li-0.png"/></li>
+            <li><img src="./Assets/Iteration-2-aseets/footer/insta/li-1.png"/></li>
+            <li><img src="./Assets/Iteration-2-aseets/footer/insta/li-2.png"/></li>
+            <li><img src="./Assets/Iteration-2-aseets/footer/insta/li-3.png"/></li>
+            <li><img src="./Assets/Iteration-2-aseets/footer/insta/li-4.png"/></li>
+            <li><img src="./Assets/Iteration-2-aseets/footer/insta/li-5.png"/></li>
           </ul>
         </div>
       </div>

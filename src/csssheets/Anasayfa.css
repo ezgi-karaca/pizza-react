@@ -113,7 +113,7 @@ body {
   margin-top: 4rem;
 }
 .first-cart {
-  background-image: url("");
+  background-image: url("./Assets/Iteration-2-aseets/cta/kart-1.png");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -161,7 +161,7 @@ body {
   flex: 1;
 }
 .second-cart {
-  background-image: url("public/assets/iteration-2/cta/kart-2.png");
+  background-image: url("./Assets/Iteration-2-aseets/cta/kart-2.png");
   background-size: cover;
   flex: 1;
   border-radius: 1rem;
@@ -183,7 +183,7 @@ body {
 }
 
 .third-cart {
-  background-image: url("public/assets/iteration-2/cta/kart-3.png");
+  background-image: url("./Assets/Iteration-2-aseets/cta/kart-3.png");
   background-size: cover;
   flex: 1;
   border-radius: 1rem;
