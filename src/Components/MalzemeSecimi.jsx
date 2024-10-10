@@ -36,7 +36,7 @@ function MalzemeSecimi({ onToppingsChange, selectedToppings }) {
       <p>En Fazla 10 malzeme seçebilirsiniz. 5₺</p>
       <form className="checkbox">
         {ekMalzemeler.map((malzeme)=>{
-          return <label><input type="checkbox" value={malzeme} checked={selectedToppings.includes(malzeme)} onChange={handleChange}/> {malzeme}</label>})}
+          return <label key={malzeme}><input type="checkbox" value={malzeme} checked={selectedToppings.includes(malzeme)} onChange={handleChange}/> {malzeme}</label>})}
       </form> 
       </div>
     </div>
