@@ -46,12 +46,20 @@ body {
   display: block;
 }
 
-
-hr {
+.hr {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   margin-bottom: 3rem;
+}
+.hr hr{
+  display: flex;
+  width: 30%;
 }
 
 .siparis-toplami {
   display: flex;
+  justify-content: center;
+  width: 30;
   padding-bottom: 5rem;
 }

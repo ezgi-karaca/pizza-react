@@ -49,8 +49,10 @@ function FormSayfasi() {
           <MalzemeSecimi onToppingsChange={handleToppings} selectedToppings={selectedToppings}  />
 
           <SiparisNotu/>
-
-          <hr/>
+          <div className="hr">
+            <hr/>
+          </div>
+         
 
           <div className="siparis-toplami">
           <Counter/>
