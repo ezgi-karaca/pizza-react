@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom";
+import axios from 'axios';
 import '../csssheets/FormSayfasi.css'
 
 
@@ -21,13 +22,38 @@ const  ekMalzemeler = [
 
 function FormSayfasi() {
   const history = useHistory();
-  const handleSubmit = () => {
-    history.push('/sonuc'); 
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    const orderData = {
+      count,
+      selectedToppings,
+      totalPrice: toplamFiyatiHesapla()
+    };
+
+    axios.post('https://reqres.in/api/pizza', orderData)
+    .then(response => {
+      console.log('Sipariş Özeti:', orderData);
+      console.log('API Yanıtı:', response.data); 
+      history.push('/sonuc'); 
+    })
+    .catch(error => {
+      console.error('API isteği sırasında bir hata oluştu:', error);
+      alert('Bir hata oluştu. Lütfen tekrar deneyin.'); 
+    });
   };
  
+  const [formValid, setFormValid] = useState(false);
+  const validateForm = () => {
+    const isSizeSelected = document.querySelector('input[name="boyut"]:checked');
+    const isDoughSelected = document.querySelector('select').value !== "hamur-kalinlik";
+    setFormValid(isSizeSelected && isDoughSelected);
+  };
 
   const pizzaFiyati = 85.50;
   const [selectedToppings, setSelectedToppings] = useState([]);
+
 
   const boyutlar = [
     { id: "kucuk", label: "S" },
@@ -35,11 +61,12 @@ function FormSayfasi() {
     { id: "buyuk", label: "L" }
   ];
 
-  const hamurKalınlıkları = [
+  const hamurKalinliklari = [
     { value: "hamur-kalinlik", label: "--Hamur Kalınlığı Seç--", disabled: true },
     { value: "ince", label: "İnce" },
     { value: "kalin", label: "Kalın" }
   ];
+  
   
 
   const handleToppings = (topping, isChecked) => {
@@ -122,7 +149,7 @@ function FormSayfasi() {
                 <div className="boyut-labels">
                   {boyutlar.map((boyut) => (
                     <label key={boyut.id} htmlFor={boyut.id}>
-                      <input type="radio" id={boyut.id} name="boyut" /> {boyut.label}
+                      <input type="radio" id={boyut.id} name="boyut" onChange={validateForm} /> {boyut.label}
                     </label>
                   ))}   
                 </div>
@@ -130,8 +157,8 @@ function FormSayfasi() {
 
               <div className="hamur-form">
               <h3>Hamur Seç <span className="star">*</span></h3>
-              <select>
-                {hamurKalınlıkları.map((hamur) => (
+              <select onChange={validateForm}>
+                {hamurKalinliklari.map((hamur) => (
                 <option key={hamur.value} value={hamur.value} disabled={hamur.disabled}>
                   {hamur.label}
                 </option>
@@ -193,7 +220,7 @@ function FormSayfasi() {
                 <p>{toplamFiyatiHesapla()}₺</p>
               </div>
 
-              <button type="submit" >Sipariş Ver</button>
+              <button type="submit"  disabled={!formValid} >Sipariş Ver</button>
             </div>
 
           </div>

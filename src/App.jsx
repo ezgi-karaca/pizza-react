@@ -6,6 +6,7 @@ import SiparisOzeti from './Components/SiparisOzeti.jsx';
 import './csssheets/App.css'
 
 function App() {
+  
   return (
     <Router>
       <Switch>
