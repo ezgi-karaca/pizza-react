@@ -2,6 +2,8 @@ import React from 'react';
 import '../csssheets/SiparisOzeti.css'
 
 function SiparisOzeti() {
+
+
   return (
     <div className='sonuc-sayfasi'>
       <div className='sonuc'>
@@ -19,8 +21,8 @@ function SiparisOzeti() {
           <h3 className='pizza-ismi'>Position Absolute Acı Pizza</h3>
           <div className='siparis-detay'>
             <p>Boyut: <span>L</span></p>
-            <p>Hamur: <span>Süpper İnce</span></p>
-            <p>Ek Malzemeler: <span>Pepperoni, Sosis, Mısır, Ananas, Jalepeno</span></p>
+            <p>Hamur: <span>İnce</span></p>
+            <p>Ek Malzemeler: <span>Pepperoni, Sucuk, Biber</span></p>
           </div>
         </div>
       </div>
@@ -34,7 +36,7 @@ function SiparisOzeti() {
           
           </div>
           <div className='total'>
-            <h4>Toplam</h4><p>110.50₺</p>
+            <h4>Toplam</h4><p>110.25₺</p>
           
           </div>
         </div>
