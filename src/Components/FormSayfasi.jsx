@@ -48,7 +48,8 @@ function FormSayfasi() {
   const validateForm = () => {
     const isSizeSelected = document.querySelector('input[name="boyut"]:checked');
     const isDoughSelected = document.querySelector('select').value !== "hamur-kalinlik";
-    setFormValid(isSizeSelected && isDoughSelected);
+    const isToppingsValid = selectedToppings.length >= 3;
+    setFormValid(isSizeSelected && isDoughSelected && isToppingsValid);
   };
 
   const pizzaFiyati = 85.50;
@@ -81,6 +82,7 @@ function FormSayfasi() {
      
       setSelectedToppings(prev => prev.filter(t => t !== topping));
     }
+    validateForm();
   };
   
   const handleChange = (e) => {
@@ -121,7 +123,7 @@ function FormSayfasi() {
         
       </div>
 
-      <div className="pizza">
+      <section className="pizza">
         <div className="pizza-container">
           <img src="./Assets/Iteration-2-aseets/pictures/form-banner.png"/>
           <p className="yazi">Anasayfa - <span className="span">Sipariş Oluştur</span></p>
@@ -133,9 +135,9 @@ function FormSayfasi() {
           </div>
           <p className="aciklama">Frontent Dev olarak hala position:absolute kullanıyorsan bu çok acı pizza tam sana göre. Pizza, domates, peynir ve genellikle çeşitli diğer malzemelerle kaplanmış, daha sonra geleneksel olarak odun ateşinde bir fırında yüksek sıcaklıkta pişirilen, genellikle yuvarlak, düzleştirilmiş mayalı buğday bazlı hamurdan oluşan İtalyan kökenli lezzetli bir yemektir. . Küçük bir pizzaya bazen pizzetta denir.</p>
         </div>
-      </div>
+      </section>
 
-      <div className="form-container">
+      <section className="form-container">
         <form className="form" onSubmit={handleSubmit}>
           
 
@@ -145,7 +147,7 @@ function FormSayfasi() {
             <div className="boyut-secimi">
               <div className="boyut-container">
               <div className="boyut-form">
-                <h3>Boyut Seç <span className="star">*</span></h3>
+                <legend>Boyut Seç <span className="star">*</span></legend>
                 <div className="boyut-labels">
                   {boyutlar.map((boyut) => (
                     <label key={boyut.id} htmlFor={boyut.id}>
@@ -156,7 +158,7 @@ function FormSayfasi() {
               </div>
 
               <div className="hamur-form">
-              <h3>Hamur Seç <span className="star">*</span></h3>
+              <legend>Hamur Seç <span className="star">*</span></legend>
               <select onChange={validateForm}>
                 {hamurKalinliklari.map((hamur) => (
                 <option key={hamur.value} value={hamur.value} disabled={hamur.disabled}>
@@ -173,7 +175,7 @@ function FormSayfasi() {
 
           <div className="malzeme-container">
             <div className="malzemeler">
-            <h3>Ek Malzemeler</h3>
+            <legend>Ek Malzemeler</legend>
             <p>En Fazla 10 malzeme seçebilirsiniz. 5₺</p>
             <div className="checkbox">
               {ekMalzemeler.map((malzeme)=>{
@@ -200,9 +202,9 @@ function FormSayfasi() {
 
             <div>
               <div className="counter-container">
-                <button className="button" onClick={eksi}>-</button>
+                <button type="button" className="button" onClick={eksi}>-</button>
                 <h3  className="count" >{count}</h3>
-                <button className="button" onClick={arti}>+</button>
+                <button type="button" className="button" onClick={arti}>+</button>
               </div>
             </div>
 
@@ -227,7 +229,7 @@ function FormSayfasi() {
           
         
         </form>
-      </div>
+      </section>
     </div>
   )
 }
