@@ -20,7 +20,7 @@ const  ekMalzemeler = [
   "Kabak"
 ];
 
-function FormSayfasi() {
+function FormSayfasi({ setOrderDetails }) {
   const history = useHistory();
 
   const handleSubmit = (e) => {
@@ -29,8 +29,12 @@ function FormSayfasi() {
     const orderData = {
       count,
       selectedToppings,
+      size: selectedSize, // Boyutu ekle
+      dough: selectedDough, // Hamur kalınlığını ekle
       totalPrice: toplamFiyatiHesapla()
     };
+
+    setOrderDetails(orderData); // Sipariş detaylarını ayarla
 
     axios.post('https://reqres.in/api/pizza', orderData)
     .then(response => {
@@ -50,6 +54,19 @@ function FormSayfasi() {
     const isDoughSelected = document.querySelector('select').value !== "hamur-kalinlik";
     const isToppingsValid = selectedToppings.length >= 3;
     setFormValid(isSizeSelected && isDoughSelected && isToppingsValid);
+  };
+
+  const [selectedSize, setSelectedSize] = useState('');
+  const [selectedDough, setSelectedDough] = useState('');
+
+  const handleSizeChange = (e) => {
+    setSelectedSize(e.target.id); 
+    validateForm();
+  };
+
+  const handleDoughChange = (e) => {
+    setSelectedDough(e.target.value);
+    validateForm();
   };
 
   const pizzaFiyati = 85.50;
@@ -151,7 +168,7 @@ function FormSayfasi() {
                 <div className="boyut-labels">
                   {boyutlar.map((boyut) => (
                     <label key={boyut.id} htmlFor={boyut.id}>
-                      <input type="radio" id={boyut.id} name="boyut" onChange={validateForm} /> {boyut.label}
+                      <input type="radio" id={boyut.id} name="boyut" onChange={handleSizeChange} /> {boyut.label}
                     </label>
                   ))}   
                 </div>
@@ -159,9 +176,9 @@ function FormSayfasi() {
 
               <div className="hamur-form">
               <legend>Hamur Seç <span className="star">*</span></legend>
-              <select onChange={validateForm}>
+              <select onChange={handleDoughChange}>
                 {hamurKalinliklari.map((hamur) => (
-                <option key={hamur.value} value={hamur.value} disabled={hamur.disabled}>
+                <option key={hamur.value} value={hamur.value}  disabled={hamur.disabled}>
                   {hamur.label}
                 </option>
               ))}
