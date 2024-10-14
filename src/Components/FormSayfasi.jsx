@@ -125,8 +125,8 @@ function FormSayfasi({ setOrderDetails }) {
   }
 
   const toplamFiyatiHesapla = () => {
-    return pizzaFiyati + (selectedToppings.length*5);
-  }
+    return (pizzaFiyati + toppingFiyatiHesapla()) * count;
+  };
    
 
 
