@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from 'react-router-dom'; 
 import { useHistory } from "react-router-dom/cjs/react-router-dom";
 import axios from 'axios';
 import '../csssheets/FormSayfasi.css'
@@ -134,7 +135,7 @@ function FormSayfasi({ setOrderDetails }) {
     <div>
       <div className="header">
         <div className="header-text">
-          <h1 className='baslik'>Teknolojik Yemekler</h1>
+          <Link to="/" className='baslik'>Teknolojik Yemekler</Link>
 
         </div>
         
